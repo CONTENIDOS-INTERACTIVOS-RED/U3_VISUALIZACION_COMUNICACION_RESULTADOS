@@ -17,13 +17,31 @@
 
 .bg-color
   &-1
-    background-color: #EAF8FD
+    background-color: #C6FDFB
   &-2
-    background-color: #FFFBE8
+    background-color: #FBE7B2
   &-3
-    background-color: #F0E9F6
+    background-color: #3B2A76 !important
   &-4
-    background-color: #EAF8FD
+    background-color: #E1DAF7
+  &-5
+    background-color: #FADEF8
+  &-6
+    background-color: #EFECFA !important
+  &-7
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(249, 238, 210, 1) 50%, rgba(255, 255, 255, 1) 100%)
+  &-8
+    color: #707070 !important
+  &-9
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(163, 147, 218, 1) 20%, rgba(204, 192, 247, 1) 50%, rgba(255, 255, 255, 1) 100%)
+  &-10
+    background-color: #F7CEF5
+  &-11
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(195, 183, 239, 1) 40%, rgba(195, 183, 239, 1) 60%, rgba(255, 255, 255, 1) 100%)
+  &-12
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(206, 252, 250, 1) 40%, rgba(206, 252, 250, 1) 60%, rgba(255, 255, 255, 1) 100%)
+  &-13
+    background-color: #DBE7FC
   &-info
     background-color: #E8EEFD
   &-sintesis
@@ -97,7 +115,7 @@ $custom-card-img-height: 322px
 
 
 .acordion__header
-  background-color: lighten($color-acento-contenido, 25%) !important
+  background-color: lighten($color-acento-contenido, 45%) !important
 
 .acordion__header--active
   background-color: $color-acento-contenido !important
@@ -105,7 +123,7 @@ $custom-card-img-height: 322px
     color: #000 !important
 
 .acordion__contenido
-  background-color: lighten($color-acento-contenido, 27%) !important
+  background-color: lighten($color-acento-contenido, 47%) !important
 
 
 .anexo__texto
@@ -143,7 +161,7 @@ $custom-card-img-height: 322px
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.05)
 
 .tabs-content
-  background-color: #F4F4F4
+  background-color: #EFECFA
 
 .material-complementario
   p,a
@@ -227,3 +245,30 @@ th.bg-color-tabla
 
 .bordes
   border: 1px solid lightgray !important
+
+//CLASES TITULOS//
+.titulo-con-imagen
+  display: flex
+  align-items: center
+  position: relative
+.titulo-con-imagen__fondo
+  border-radius: 10px
+  padding: 10px 20px
+  display: inline-flex
+  align-items: center
+.titulo-con-imagen__imagen
+  position: absolute
+  left: 0px
+  width: 50px
+.titulo-con-imagen__texto
+  margin: 0
+  padding-left: 40px
+
+///////////////TABLAS/////////////////// 
+.tbl
+  table td
+    text-align: start !important
+  th, td, table thead th, .tabla-a th 
+    border: 2px solid #B5B5B5
+  table
+    table-layout: auto
