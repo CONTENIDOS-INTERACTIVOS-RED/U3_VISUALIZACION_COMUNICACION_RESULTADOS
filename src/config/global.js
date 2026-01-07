@@ -1,7 +1,7 @@
 export default {
   global: {
     numeroUnidad: '3',
-    tituloUnidad: 'PRESENTACIÓN DE RESULTADOS Y REPORTES DE BI',
+    tituloUnidad: 'Presentación de resultados y reportes de BI',
   },
   menuPrincipal: {
     menu: [
