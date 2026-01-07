@@ -1,7 +1,7 @@
 export default {
   global: {
-    numeroUnidad: '1',
-    tituloUnidad: 'Fundamentos de la Visualización de Datos',
+    numeroUnidad: '3',
+    tituloUnidad: 'PRESENTACIÓN DE RESULTADOS Y REPORTES DE BI',
   },
   menuPrincipal: {
     menu: [
@@ -15,21 +15,44 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Importancia de la visualización en la toma de decisiones',
+        titulo: 'Presentación de resultados y reportes de BI',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Del dato a la sabiduría – Cadena DIKW',
+            titulo: 'Comunicación de hallazgos a diferentes audiencias',
             hash: 't_1_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.2',
-            titulo:
-              'Casos internacionales de alto impacto y ejemplo aplicado: diagnóstico visual para la toma de decisiones',
+            titulo: 'Tipologías de audiencias y reportes',
             hash: 't_1_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.3',
+            titulo: 'Elementos clave para comunicar hallazgos',
+            hash: 't_1_3',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.4',
+            titulo: 'Técnicas narrativas para comunicar hallazgos',
+            hash: 't_1_4',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.5',
+            titulo: '<em>Storytelling</em> ejecutivo',
+            hash: 't_1_5',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.6',
+            titulo: 'Aplicación integrada: Caso Nestlé LATAM',
+            hash: 't_1_6',
           },
         ],
       },
@@ -37,104 +60,26 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Principios del diseño de gráficos e infografías',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.1',
-            titulo: 'Principios visuales fundamentales',
-            hash: 't_2_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.2',
-            titulo: 'Fundamentos psicológicos del diseño',
-            hash: 't_2_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.3',
-            titulo: 'Tipologías de gráficos y su uso táctico',
-            hash: 't_2_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.4',
-            titulo: 'Casos reales y crítica visual',
-            hash: 't_2_4',
-          },
-        ],
-      },
-      {
-        nombreRuta: 'tema3',
-        icono: 'far fa-file-alt',
-        numero: '3',
-        titulo: 'Presentación de resultados y reportes de BI',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.1',
-            titulo: 'Comunicación de hallazgos a diferentes audiencias',
-            hash: 't_3_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.2',
-            titulo: 'Tipologías de audiencias y reportes',
-            hash: 't_3_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.3',
-            titulo: 'Elementos clave para comunicar hallazgos',
-            hash: 't_3_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.4',
-            titulo: 'Técnicas narrativas para comunicar hallazgos',
-            hash: 't_3_4',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.5',
-            titulo: '<em>Storytelling</em> ejecutivo',
-            hash: 't_3_5',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.6',
-            titulo: 'Aplicación integrada: Caso Nestlé LATAM',
-            hash: 't_3_6',
-          },
-        ],
-      },
-      {
-        nombreRuta: 'tema4',
-        icono: 'far fa-file-alt',
-        numero: '4',
         titulo: 'Herramientas recomendadas y su aplicación estratégica',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
-            numero: '4.1',
+            numero: '2.1',
             titulo: 'PowerPoint + Power BI (vistas incrustadas)',
-            hash: 't_4_1',
+            hash: 't_2_1',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '4.2',
+            numero: '2.2',
             titulo: 'Tableau Storypoints',
-            hash: 't_4_2',
+            hash: 't_2_2',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '4.3',
+            numero: '2.3',
             titulo: 'Infogram',
-            hash: 't_4_3',
+            hash: 't_2_3',
           },
         ],
       },
@@ -176,105 +121,85 @@ export default {
   referencias: [
     {
       referencia:
-        'López Cantos, F. J. (2018). <em>Cultura visual y conocimiento científico: comunicación transmedia de la ciencia en la era Big Data</em>. Editorial UOC.',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/116307',
+        'Rave Gómez, E. D. (Comp.). (2019). <em>Análisis de casos empresariales: una perspectiva para enfrentar los desafíos gerenciales</em>. (1 ed.). D - Institución Universitaria de Envigado.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/226483',
     },
     {
       referencia:
-        'Sadowsky, J. (2013). <em>Las siete reglas del storytelling: inspire a su equipo con liderazgo auténtico</em>. Ediciones Granica.',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/66757',
+        'Santiesteban Zaldívar, E. (2011). <em>Análisis de la rentabilidad económica: tecnología propuesta para incrementar la eficiencia empresarial</em>. Editorial Universitaria.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/71436',
     },
     {
       referencia:
-        'Castro, C., Barredo Ibáñez, D., & Arcila Calderón, C. (2017). <em>Analítica y visualización de datos en Twitter</em>. Editorial UOC.',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/58659',
-    },
-    {
-      referencia:
-        'Pérez Cortés, A. (2010). <em>Implementación de tableros de control (indicadores) en el área de mejora continua en una empresa de manufactura</em>. Instituto Tecnológico de Puebla.',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/85648',
-    },
-    {
-      referencia:
-        'Ortega Martínez, J. A. (2011). <em>Diagnóstico empresarial mediante el análisis económico-financiero</em>. Editorial Desclée de Brouwer.',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/47974',
-    },
-    {
-      referencia:
-        'Palomo Zurdo, R. J. (2010). <em>Enciclopedia de Economía y Negocios (2): Análisis de sensibilidad - base de datos empresarial</em>. Wolters Kluwer España.',
-      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/204382',
+        'Uribe Macías, M. E. & Cujiño Ibarra, M. J. (2014). <em>La estrategia en la historia empresarial: análisis de dos casos empresariales</em>. Sello Editorial Universidad del Tolima.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/71018',
     },
   ],
   glosario: [
     {
-      termino: 'Análisis exploratorio',
+      termino: 'Automatización de reportes',
       definicion:
-        'Proceso inicial de análisis de datos que permite identificar patrones, tendencias, anomalías y relaciones antes de aplicar modelos estadísticos o predictivos.',
+        'Proceso de generación automática de informes a partir de flujos de datos programados mediante herramientas BI y ETL.',
     },
     {
       termino: 'BI (Business Intelligence)',
       definicion:
-        'Conjunto de estrategias, metodologías y herramientas que transforman datos en información útil para apoyar la toma de decisiones empresariales.',
-    },
-    {
-      termino: 'Carga cognitiva',
-      definicion:
-        'Cantidad de esfuerzo mental que una persona necesita para procesar la información presentada, especialmente en entornos visuales y digitales.',
-    },
-    {
-      termino: 'DAX',
-      definicion:
-        'Lenguaje de fórmulas utilizado en Power BI para crear cálculos personalizados, medidas y columnas dentro de modelos de datos.',
-    },
-    {
-      termino: 'DIKW',
-      definicion:
-        'Modelo jerárquico que describe la transformación de los datos en conocimiento útil, pasando por las etapas de Datos, Información, Conocimiento y Sabiduría.',
+        'Conjunto de herramientas y técnicas que permiten transformar datos en información útil para la toma de decisiones.',
     },
     {
       termino: 'Dashboard',
       definicion:
-        'Tablero de control visual que integra y resume indicadores clave de desempeño (KPIs) para facilitar el análisis y la toma de decisiones.',
+        'Panel visual que presenta de forma interactiva datos clave para monitoreo y análisis.',
     },
     {
-      termino: 'Data-to-ink ratio',
+      termino: 'ETL (Extract, Transform, Load)',
       definicion:
-        'Proporción entre la tinta utilizada para mostrar datos relevantes y la usada en elementos decorativos, principio propuesto por Edward Tufte para mejorar la claridad visual.',
+        'Proceso para extraer, transformar y cargar datos desde múltiples fuentes hacia un repositorio o dashboard.',
     },
     {
-      termino: 'Gestalt',
+      termino: 'KCI (Key Control Indicator)',
       definicion:
-        'Conjunto de principios psicológicos que explican cómo las personas perciben, organizan e interpretan patrones y estructuras visuales.',
+        'Indicador que mide el grado de cumplimiento o control sobre un proceso clave.',
     },
     {
-      termino: 'Indicador clave (KPI)',
+      termino: 'KPI (Key Performance Indicator)',
       definicion:
-        'Métrica cuantitativa que mide el desempeño de un proceso, área o estrategia frente a un objetivo definido.',
+        'Indicador clave para medir el cumplimiento de objetivos estratégicos.',
     },
     {
-      termino: 'Infografía',
+      termino: 'KRI (Key Risk Indicator)',
       definicion:
-        'Representación visual que combina gráficos, texto e iconografía para comunicar datos o conceptos de forma clara, atractiva y comprensible.',
+        'Indicador que permite medir el nivel de exposición a un riesgo específico.',
     },
     {
-      termino: 'Looker Studio',
+      termino: 'Minimización cognitiva',
       definicion:
-        'Herramienta gratuita de Google para crear dashboards e informes visuales conectados a fuentes de datos como Google Sheets y Google Analytics.',
+        'Técnica de diseño visual que reduce el esfuerzo mental requerido para comprender una visualización.',
     },
     {
-      termino: 'Metabase',
+      termino: 'Periodicidad',
       definicion:
-        'Herramienta de visualización de código abierto orientada al análisis ágil de datos mediante consultas SQL o interfaces gráficas.',
+        'Frecuencia con la que un informe o dashboard es actualizado o entregado.',
     },
     {
-      termino: 'Power BI',
+      termino: 'Scoring visual',
       definicion:
-        'Herramienta de Microsoft para análisis empresarial y visualización de datos que permite crear reportes y dashboards interactivos.',
+        'Método para evaluar la efectividad de una visualización desde el punto de vista del usuario final.',
     },
     {
-      termino: 'RawGraphs',
+      termino: 'Storytelling ejecutivo',
       definicion:
-        'Herramienta de código abierto que permite crear visualizaciones personalizadas a partir de datos estructurados sin necesidad de programación.',
+        'Narrativa estratégica que convierte hallazgos analíticos en mensajes persuasivos orientados a la acción.',
+    },
+    {
+      termino: 'Tipologías de reporte',
+      definicion:
+        'Clasificación de los informes según su uso operativo, táctico o estratégico.',
+    },
+    {
+      termino: 'Trazabilidad',
+      definicion:
+        'Capacidad de seguir el origen y transformación de los datos utilizados en una visualización.',
     },
   ],
 }

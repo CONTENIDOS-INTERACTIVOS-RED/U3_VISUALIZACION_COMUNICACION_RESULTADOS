@@ -22,7 +22,7 @@
             .content-wrapper.px-lg-4.pt-lg-4.px-xxl-5.py-xxl-5.text-start
               p.home-main-title UNIDAD {{ `${globalData.numeroUnidad}` }}
               h1.home-title.mb-4 {{ globalData.tituloUnidad }}
-              p.descripcion.mb-4 La unidad “Visualización y comunicación de resultados” desarrolla habilidades clave para transformar datos en representaciones comprensibles, facilitando decisiones estratégicas. Se abordan fundamentos como el modelo DIKW, principios del diseño gráfico y psicológico, y herramientas como Power BI, Tableau y Looker Studio. Se promueve el uso ético y efectivo de dashboards. El enfoque práctico incluye análisis de casos reales, ejercicios aplicados y reflexión crítica sobre la comunicación visual. Esta base permite al estudiante diseñar visualizaciones útiles y alineadas con los objetivos organizacionales, mejorando la inteligencia de negocios y la comunicación basada en datos.
+              p.descripcion.mb-4 La unidad aborda la presentación de resultados en inteligencia de negocios (BI) como competencia clave para transformar análisis en decisiones. Enseña a comunicar hallazgos según audiencias (técnica, directiva y social), aplicar storytelling ejecutivo y usar herramientas como Power BI, Tableau e Infogram. Se profundiza en la evaluación del impacto mediante KPI, KRI y KCI, simplificación visual, pruebas de regresión y scoring visual. También incluye buenas prácticas de automatización, validación y estandarización de dashboards. La meta es formar analistas capaces de crear reportes claros, confiables y estratégicamente relevantes.
 
               .button-container.mt-auto
                 router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")

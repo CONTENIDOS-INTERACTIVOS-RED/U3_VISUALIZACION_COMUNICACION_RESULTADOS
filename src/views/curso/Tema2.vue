@@ -1,480 +1,529 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'2. Principios del diseño de gráficos e infografías'")
+  BannerInterno(:subTitulo="'2. Herramientas recomendadas y su aplicación estratégica'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
+    .bg-color-1.mb-5(data-aos="fade-up")
+      .row.justify-content-center.align-items-center
+        .col-lg-auto.mb-3.mb-lg-0
+          figure
+            img(src='@/assets/curso/tema4/1.png', alt='')
+        .col-lg
+          .p-4
+            p.mb-0(data-aos="fade-up") En esta sección se presentan herramientas digitales clave que potencian las presentaciones ejecutivas y facilitan la toma de decisiones basada en datos. Una de las más efectivas es la integración de PowerPoint con Power BI, que permite combinar narrativa visual e interactividad en un mismo entorno.
+
+    #t_2_1.titulo-segundo(data-aos="flip-up")
+      h2 #[span 2.1] PowerPoint + Power BI (vistas incrustadas)
+    
     .row.mb-5
       .col-lg-4.order-lg-2.mb-3.mb-lg-0
         figure
-          img(src="@/assets/curso/tema2/1.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema4/2.png", data-aos="zoom-in")
       .col-lg-8.order-lg-1
-        p(data-aos="fade-left") Comprender los fundamentos técnicos y cognitivos de la visualización es clave para crear representaciones que no solo resulten ordenadas visualmente, sino que comuniquen de forma clara y orientada a la acción los resultados de un análisis de datos.
+        p(data-aos="fade-left") Esta integración es ideal para presentaciones ejecutivas que combinan el flujo narrativo lineal de PowerPoint con la interactividad de dashboards de Power BI. Permite que los tomadores de decisiones exploren visualmente los datos sin salir de la presentación, favoreciendo la toma de decisiones basada en información actualizada.
     
-        .bg-color-2.px-4.py-5.mb-3(data-aos="fade-left")
+        .bg-color-2.p-4(data-aos="fade-left")
           .row.align-items-start
             .col-lg-auto
-              img(src="@/assets/curso/tema2/2.svg", style="max-width: 90px").mx-auto
+              img(src="@/assets/curso/tema4/3.svg", style="max-width: 90px").mx-auto
             .col-lg
-              p.mb-0 El uso estratégico de la visualización de datos permite identificar oportunidades, anticiparse a problemas y comunicar con claridad los indicadores clave en las organizaciones.
-        p El diseño visual aplicado a la analítica de datos se apoya en referentes ampliamente reconocidos como Edward Tufte y Stephen Few, quienes proponen lineamientos para eliminar el “ruido visual” y maximizar el valor informativo de cada representación. Estos principios se complementan con fundamentos de la psicología cognitiva, como la teoría de la Gestalt y la teoría de la carga cognitiva (Sweller), que explican cómo las personas priorizan la información y cómo se puede facilitar su interpretación mediante el diseño adecuado.
+              h5 Ejemplo aplicado
+              p.mb-0 Unilever Global utiliza esta integración para reportes ESG (Environmental, Social and Governance), permitiendo a los líderes interactuar en tiempo real con métricas ambientales y de inclusión durante reuniones de comité, sin depender de reportes estáticos.
 
-    #t_2_1.titulo-segundo(data-aos="flip-up")
-      h2 #[span 2.1] Principios visuales fundamentales
+    .titulo-con-imagen.mb-5(data-aos="fade-right")
+      .titulo-con-imagen__fondo
+        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
+        h3.titulo-con-imagen__texto Cómo usar la integración PowerPoint + Power BI
+      
+    p.mb-5 Para aprovechar esta herramienta de manera estratégica, se recomienda seguir los siguientes pasos:
 
-    p.mb-5 Para diseñar gráficos e infografías funcionales y comprensibles, es necesario aplicar una serie de principios visuales que garanticen claridad, coherencia estética y facilidad de interpretación. A continuación, se presentan los principales:
+    .bg-full-width.bg-fondo-slider.mb-5
+      .p-4.p-md-5
+        SlyderA(tipo="b").bg-white
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5.mb-3.mb-lg-0
+              figure
+                img(src="@/assets/curso/tema4/4.png")
+            .col-lg-7
+              h5 1. Crear el dashboard en Power BI Desktop
+              ul.lista-ul--color
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Descargar e instalar Power BI Desktop (gratis desde Microsoft Store o instalador .exe). 
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Conectar datos (Excel, SQL, CSV) y transformarlos con Power Query. 
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Diseñar visualizaciones (gráficos de barras, líneas, mapas, tablas) y configurar títulos y leyendas.
+    
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5.mb-3.mb-lg-0
+              figure
+                img(src="@/assets/curso/tema4/5.png")
+            .col-lg-7
+              h5 2. Publicar en Power BI Service (nube)
+              ul.lista-ul--color
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Hacer clic en Publicar para subir el informe. 
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Hacer clic en Publicar para subir el informe. 
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5.mb-3.mb-lg-0
+              figure
+                img(src="@/assets/curso/tema4/6.png")
+            .col-lg-7
+              h5 3. Insertar en PowerPoint (Microsoft 365)
+              ul.lista-ul--color
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Ir a Insertar → Mis complementos → Power BI. 
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Iniciar sesión, seleccionar el panel publicado y embeberlo como iframe. 
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 En modo presentación, se pueden aplicar filtros, visualizar tooltips y navegar sin salir de la diapositiva. 
+
+    #t_2_2.titulo-segundo(data-aos="flip-up")
+      h2 #[span 2.2] Tableau Storypoints
+    
+    .row.mb-5
+      .col-lg-4.mb-3.mb-lg-0.order-lg-2
+        figure
+          img(src="@/assets/curso/tema4/7.png", data-aos="zoom-in")
+      .col-lg-8.order-lg-1
+        p(data-aos="fade-left") Tableau Storypoints es una herramienta que permite contar historias con datos mediante una secuencia de visualizaciones interactivas. Esta funcionalidad resulta especialmente útil cuando se requiere explicar hallazgos complejos paso a paso, facilitando que la audiencia siga una narrativa clara y secuencial.
+    
+        .bg-color-10.p-5(data-aos="fade-left")
+          p.mb-0 Esta función permite crear narrativas visuales guiadas, donde cada “punto de historia” es equivalente a una diapositiva con un gráfico o panel interactivo. Es ideal para presentar análisis progresivos, resaltar cambios en el tiempo y estructurar un discurso de tipo inicio – nudo – desenlace.
+    
+    .titulo-con-imagen.mb-5(data-aos="fade-right")
+      .titulo-con-imagen__fondo
+        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
+        h3.titulo-con-imagen__texto ¿Cómo se usa?
+    
+    .row.mb-5
+      .col-lg-4.mb-3.mb-lg-0
+        figure
+          img(src="@/assets/curso/tema4/8.png", data-aos="zoom-in")
+      .col-lg-8
+        p(data-aos="fade-left") Para implementar Tableau Storypoints en un flujo de trabajo típico se sigue este proceso:
+    
+        .bg-color-1.p-5(data-aos="fade-left")
+          ul.lista-ul--color
+            li.mb-3.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Se diseña el dashboard y las visualizaciones en Tableau Desktop.
+            li.mb-3.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Se organiza el contenido en Storypoints, cada uno con su gráfico y explicación.
+            li.mb-3.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Se publica en Tableau Server o Tableau Public, según el nivel de acceso requerido.
+    
+    .titulo-con-imagen.mb-5(data-aos="fade-right")
+      .titulo-con-imagen__fondo
+        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
+        h3.titulo-con-imagen__texto Ejemplo aplicado
+    
+    .bg-color-4.mb-5(data-aos="fade-up")
+      .row.justify-content-center.align-items-center
+        .col-lg-auto.order-2
+          figure
+            img(src='@/assets/curso/tema4/9.png', alt='')
+        .col-lg.order-1.mb-3.mb-lg-0
+          .p-4
+            p.mb-0(data-aos="fade-up") Bank of America utiliza Tableau Storypoints para presentaciones regulatorias, mostrando cómo evolucionan los riesgos operacionales en el tiempo. Esta narrativa ayuda a los auditores a comprender la historia detrás de los indicadores más allá de un gráfico aislado.
+    
+    .titulo-con-imagen.mb-5(data-aos="fade-right")
+      .titulo-con-imagen__fondo
+        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
+        h3.titulo-con-imagen__texto Paso a paso para construir un Tableau Story (Storypoints)
+    
+    p.mb-5 Para crear una historia completa en Tableau, se recomienda seguir los siguientes pasos secuenciales:
 
     .row.align-items-start.mb-5
       .col-lg-4.mb-3.mb-lg-0
         figure
-          img(src="@/assets/curso/tema2/3.png", alt="").mb-4.mb-lg-0
+          img(src="@/assets/curso/tema4/10.png", alt="").mb-4.mb-lg-0
       .col-lg-8
     
         AcordionA(tipo="b")
-          .div(titulo="Claridad y eliminación de ruido visual")
-            p Evitar distracciones innecesarias. Todo elemento debe tener una función informativa. Por ejemplo, preferir un gráfico de barras limpio sobre uno 3D con sombras o texturas.
+          .div(titulo="1. Conectar los datos")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Abrir Tableau Desktop o Public Edition. 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Seleccionar la opción Conectar a datos (Excel, CSV o Google Sheets).
     
-          .div(titulo="Jerarquía visual: uso del tamaño, color y ubicación")
-            p Organizar elementos visuales para guiar la atención del usuario. Se recomienda ubicar los KPIs clave en la parte superior, utilizar tamaños mayores para las métricas principales y aplicar colores contrastantes.
+          .div(titulo="2. Crear vistas individuales (hojas)")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Diseñar gráficos básicos (barras, líneas, mapas). 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Cada hoja representa una visualización específica, como ventas por región o evolución mensual de KPIs.
     
-          .div(titulo="Coherencia cromática y semiótica visual")
-            p Utilizar colores con significados consistentes. Por ejemplo, respetar la paleta institucional: verde para positivo, rojo para alerta. Es importante evitar contradicciones visuales.
+          .div(titulo="3. Añadir una nueva Story")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Hacer clic en la pestaña Nueva historia (New Story). 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Definir el tamaño de la historia (predefinido o personalizado).
     
-          .div(titulo="Minimalismo informativo (data-to-ink ratio)")
-            p Reducir los elementos decorativos que no aportan información directa. Se sugiere eliminar cuadrículas innecesarias, mostrar solo los ejes pertinentes y centrarse en los datos clave.
-    
-    #t_2_2.titulo-segundo(data-aos="flip-up")
-      h2 #[span 2.2] Fundamentos psicológicos del diseño
+          .div(titulo="4. Construir Storypoints")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Arrastrar hojas o dashboards al primer punto. 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Agregar título o pie de página para explicar el hallazgo. 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Usar Blank para puntos nuevos o Duplicate para clonar y filtrar.
+          .div(titulo="5. Editar cada punto visual")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Ajustar leyendas, tamaños y resaltar datos clave. 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Incluir explicaciones breves o llamadas a la acción.
+          .div(titulo="6. Navegación y presentación")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Usar la barra de Storypoints para avanzar o retroceder entre visualizaciones
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 En modo presentación o tras publicar, navegar con flechas o thumbnails.
 
-    .row.mb-5
-      .col-lg-4.order-lg-2.mb-3.mb-lg-0
-        figure
-          img(src="@/assets/curso/tema2/4.png", data-aos="zoom-in")
-      .col-lg-8.order-lg-1
-        p(data-aos="fade-left") Comprender cómo las personas perciben y procesan la información visual permite diseñar representaciones que no solo sean estéticamente correctas, sino también accesibles, comprensibles y funcionales para la toma de decisiones.
-    
-        .bg-color-4.px-4.py-5(data-aos="fade-left")
-          p.mb-0 Una vez establecidos los principios técnicos del diseño visual —como claridad, jerarquía, coherencia y minimalismo—, es necesario profundizar en cómo la mente humana interpreta esa información. Este subtema aborda los fundamentos psicológicos del diseño visual, que permiten construir gráficos y tableros no solo atractivos, sino también eficientes y accesibles para distintas audiencias.
-    
-    .row.mb-5
-      .col-lg-4.mb-3.mb-lg-0
-        figure
-          img(src="@/assets/curso/tema2/5.png", data-aos="zoom-in")
-      .col-lg-8
-        p(data-aos="fade-left") Se denomina "fundamentos psicológicos del diseño" porque se centra en cómo el cerebro humano percibe, organiza y retiene la información visual, lo cual tiene implicaciones directas en la efectividad de dashboards, informes e infografías que los profesionales utilizan en sus campos de acción.
-    
-        .bg-color-1.p-5.mb-3(data-aos="fade-left")
-          p.mb-0 El estudio de la percepción y la cognición visual es especialmente relevante para quienes trabajan en áreas como analítica de datos, ingeniería industrial, gestión de operaciones, educación, salud o inteligencia de negocios. El propósito final de un gráfico o visualización no es solo representar datos, sino facilitar decisiones. Para ello, el usuario debe poder comprender el contenido sin realizar un esfuerzo cognitivo excesivo.
-        p Este contenido se presenta a continuación de los principios visuales porque no basta con organizar correctamente los elementos en pantalla: es necesario comprender cómo los va a interpretar el lector. Esto permite evitar la sobrecarga mental, mejorar la retención de la información y diseñar con empatía cognitiva.
-    
     .titulo-con-imagen.mb-5(data-aos="fade-right")
       .titulo-con-imagen__fondo
         img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-        h3.titulo-con-imagen__texto Fundamento 1: teoría de la Gestalt
+        h3.titulo-con-imagen__texto Ejemplos de gráficos recurrentes en Storypoints
     
-    p.mb-5 Esta teoría, desarrollada por la escuela de psicología alemana (Wertheimer, Koffka y Köhler), plantea que el cerebro humano tiende a organizar la información visual en patrones coherentes. Sus principios son ampliamente utilizados en el diseño de visualizaciones, ya que permiten estructurar la información de forma intuitiva y facilitar su interpretación. A continuación, se presentan los principios más relevantes de la Gestalt aplicados al diseño de dashboards, informes e infografías:
+    p.mb-5 Antes de seleccionar las visualizaciones, conviene conocer los tipos de gráficos que mejor funcionan en historias interactivas:
+    
+    .bg-full-width.bg-fondo-slider
+      .p-4.p-md-5
+        SlyderA(tipo="b").bg-white
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5.order-2
+              figure
+                img(src="@/assets/curso/tema4/11.png")
+            .col-lg-7.order-1.mb-3.mb-lg-0
+              h5 Gráfico de barras comparativas
+              p Comparar ventas reales vs. objetivo; ideal para resaltar brechas.
+    
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5.order-2
+              figure
+                img(src="@/assets/curso/tema4/12.png")
+            .col-lg-7.order-1.mb-3.mb-lg-0
+              h5 Mapa de calor o coroplético
+              p Mostrar distribución regional de indicadores (p. ej., tasa de recompra por departamento).
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5.order-2
+              figure
+                img(src="@/assets/curso/tema4/13.png")
+            .col-lg-7.order-1.mb-3.mb-lg-0
+              h5 Gráfica de líneas con tendencia
+              p Visualizar evolución temporal de KPIs (ventas, costes, churn).
+    
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5.order-2
+              figure
+                img(src="@/assets/curso/tema4/14.png")
+            .col-lg-7.order-1.mb-3.mb-lg-0
+              h5 Tabla con KPIs destacados
+              p Mostrar logros vs. metas, con indicadores tipo semáforo o barras de avance.
 
-    TabsC.color-primario.mb-5
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Proximidad" :icon="require('@/assets/bullets/1.svg')")
-        .row.justify-content-center
-          .col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Proximidad
-            p Los elementos cercanos se perciben como relacionados. Por ejemplo, agrupar indicadores financieros dentro de un mismo bloque en un dashboard facilita su análisis conjunto.
-    
-          .col-md-8.col-lg-5.col-xl-4.mb-3.mb-lg-0
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema2/6.png', alt='')
-    
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Similitud" :icon="require('@/assets/bullets/1.svg')")
-        .row.justify-content-center
-          .col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Similitud
-            p Los elementos con forma o color similar se interpretan como parte de una misma categoría. Se puede usar el mismo color para representar las ventas de diferentes países dentro de una misma región.
-    
-          .col-md-8.col-lg-5.col-xl-4.mb-3.mb-lg-0
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema2/7.png', alt='')
-    
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Continuidad" :icon="require('@/assets/bullets/1.svg')")
-        .row.justify-content-center
-          .col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Continuidad
-            p La mente tiende a seguir flujos o líneas visuales naturales. En diagramas de flujo, las conexiones deben organizarse de izquierda a derecha o de arriba hacia abajo para facilitar la lectura.
-    
-          .col-md-8.col-lg-5.col-xl-4.mb-3.mb-lg-0
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema2/8.png', alt='', style="width: 100%;")
-    
     .bg-full-width.bg-color-3.mb-5
       .px-4.px-md-5.py-4
         .row.align-items-center
           .col-lg-auto
-            img(src="@/assets/curso/tema2/31.svg", style="max-width: 90px").mx-auto
+            img(src="@/assets/curso/tema4/24.svg", style="max-width: 90px").mx-auto
           .col-lg.text-white
-            p.mb-0 La aplicación de estos principios se observa en diversos contextos profesionales, como la industria manufacturera (tableros de control de procesos), la logística (visualización de rutas), la educación (materiales didácticos visuales) y las plataformas de Business Intelligence, como Tableau o Power BI.
-
-    .titulo-con-imagen.mb-5(data-aos="fade-right")
-      .titulo-con-imagen__fondo
-        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-        h3.titulo-con-imagen__texto Fundamento 2: carga cognitiva y atención visual
+            p.mb-0 Estas visualizaciones pueden formar 3–4 Storypoints, siguiendo un flujo de problema → evidencia → análisis segmentado → propuesta de acción.
 
     .bg-full-width.bg-color-7
       .p-4.p-md-5
-        .row.mb-5
-          .col-lg-4.order-lg-2.mb-3.mb-lg-0
-            figure
-              img(src="@/assets/curso/tema2/9.png", data-aos="zoom-in")
-          .col-lg-8.order-lg-1
-            .bg-color-2.p-4(data-aos="fade-left").mb-3
-              p.mb-0 Diseñar con base en cómo funciona la atención humana es esencial para evitar que una visualización se convierta en una fuente de confusión. Este fundamento se basa en investigaciones de John Sweller (teoría de la carga cognitiva) y Richard E. Mayer (teoría del aprendizaje multimedia), quienes demostraron que la mente tiene una capacidad limitada para procesar información al mismo tiempo.
-            p(data-aos="fade-left") Cuando una visualización presenta demasiados datos o está mal estructurada, se genera sobrecarga cognitiva y se dificulta la comprensión. A continuación, se presentan algunas implicaciones clave:
-        
+        .titulo-con-imagen.mb-5(data-aos="fade-right")
+          .titulo-con-imagen__fondo
+            img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
+            h3.titulo-con-imagen__texto Opciones gratuitas y tutoriales recomendados
+
+        p.mb-5 Para iniciar con Tableau Storypoints sin costo, estas son herramientas y recursos útiles:
+
         div.row.justify-content-center.align-items-stretch.mb-5
           div.col-lg-4.mb-4(data-aos="zoom-in-up")
             div.bg-color-white.box-shadow.px-4.py-5.h-100
-              img.mx-auto.d-block.mb-4(src="@/assets/curso/tema2/10.svg" alt="" style="width: 90px")
-              h5.text-center Exceso de elementos gráficos
-              p.mb-0.text-center Simplificar y destacar solo los datos esenciales.
+              img.mx-auto.d-block.mb-4(src="@/assets/curso/tema4/15.svg" alt="" style="width: 90px")
+              h5.text-center Tableau Desktop Public Edition
+              p.mb-0.text-center Gratuito, ideal para estudiantes; permite visualizaciones ilimitadas y publicación en Tableau Public.
         
           div.col-lg-4.mb-4(data-aos="zoom-in-up")
             div.bg-color-white.box-shadow.px-4.py-5.h-100
-              img.mx-auto.d-block.mb-4(src="@/assets/curso/tema2/11.svg" alt="" style="width: 90px")
-              h5.text-center Combinación de múltiples tipos de gráficos sin conexión lógica
-              p.mb-0.text-center Establecer una narrativa clara entre los elementos visuales.
+              img.mx-auto.d-block.mb-4(src="@/assets/curso/tema4/16.svg" alt="" style="width: 90px")
+              h5.text-center Plan estudiantil de licencia completa
+              p.mb-0.text-center Licencia gratuita por un año con todas las funciones, incluidas conexiones privadas.
         
           div.col-lg-4.mb-4(data-aos="zoom-in-up")
             div.bg-color-white.box-shadow.px-4.py-5.h-100
-              img.mx-auto.d-block.mb-4(src="@/assets/curso/tema2/12.svg" alt="" style="width: 90px")
-              h5.text-center Falta de guía visual
-              p.mb-0.text-center Utilizar colores, flechas, tamaños y posiciones que orienten la atención del lector.
+              img.mx-auto.d-block.mb-4(src="@/assets/curso/tema4/17.svg" alt="" style="width: 90px")
+              h5.text-center Tutoriales paso a paso
+              p.mb-0.text-center <em>GeeksforGeeks: "How to Create a Story in Tableau"</em>
+              p.mb-0.text-center <em>DataCamp: "Creating Stories in Tableau"</em>
 
         .titulo-con-imagen.mb-5(data-aos="fade-right")
           .titulo-con-imagen__fondo
             img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-            h3.titulo-con-imagen__texto ¿Dónde se aplica?
-        
+            h3.titulo-con-imagen__texto ¿Por qué usar Tableau Storypoints?
         
         .row.mb-5
           .col-lg-4.mb-3.mb-lg-0
             figure
-              img(src="@/assets/curso/tema2/13.png", data-aos="zoom-in")
+              img(src="@/assets/curso/tema4/18.png", data-aos="zoom-in")
           .col-lg-8
-            p(data-aos="fade-left") Este principio es especialmente relevante en:
+            p(data-aos="fade-left") Elegir esta funcionalidad aporta tres ventajas estratégicas principales:
             .bg-color-4.p-5(data-aos="fade-left")
               ul.lista-ul--color
                 li.mb-0.d-flex
                   i.far.fa-arrow-alt-circle-right
-                  p.mb-0 Tableros operativos que requieren respuestas rápidas (por ejemplo, en energía, salud o mantenimiento industrial).
+                  p.mb-0 Ofrece una narrativa visual clara y escalonada, guiando a la audiencia en un orden lógico.
                 li.mb-0.d-flex
                   i.far.fa-arrow-alt-circle-right
-                  p.mb-0 Entornos educativos o administrativos, donde un exceso de datos puede dificultar la comprensión de los indicadores clave.
-    
-    .titulo-con-imagen.mb-5(data-aos="fade-right")
-      .titulo-con-imagen__fondo
-        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-        h3.titulo-con-imagen__texto Fundamento 3: tiempo de comprensión vs. nivel de detalle
-    
-    .row.mb-5
-      .col-lg-4.mb-3.mb-lg-0.order-lg-2
-        figure
-          img(src="@/assets/curso/tema2/14.png", data-aos="zoom-in")
-      .col-lg-8.order-lg-1
-        p(data-aos="fade-left") No todas las visualizaciones requieren el mismo nivel de profundidad. Este principio parte de una regla práctica: cuanto mayor es la complejidad visual, más tiempo requiere el usuario para interpretarla. Por eso, es fundamental ajustar el nivel de detalle según el perfil del público objetivo. A continuación, se presenta cómo este fundamento se traduce en decisiones de diseño:
-    
-        .bg-color-1.p-5.mb-3(data-aos="fade-left")
-          h5 Dashboard ejecutivo
-          p Incluir solo KPIs clave, sin datos operativos
-          .border-top.color-primario
-          h5.mt-3 Dashboard táctico
-          p.mb-0 Permitir navegación por capas (drill-down) para usuarios que necesitan profundizar.
-    
-    .bg-full-width.bg-color-9
-      .p-4.p-md-5
-        .titulo-con-imagen.mb-5(data-aos="fade-right")
-          .titulo-con-imagen__fondo
-            img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-            h3.titulo-con-imagen__texto ¿Dónde se aplica?
-
-        p.mb-5 Este principio es útil en:
-
-        .row.justify-content-center
-          .col-lg-4.mb-3.mb-lg-0
-            .bg-color-3.mb-5
-              .px-4.p-4
-                .row.align-items-center
-                  .col-lg-auto
-                    img(src="@/assets/curso/tema2/15.svg", style="max-width: 90px").mx-auto
-                  .col-lg.text-white
-                    h5 01
-                    p.mb-0 Presentaciones ante comités directivos
-          .col-lg-4.mb-3.mb-lg-0
-            .bg-color-3.mb-5
-              .px-4.p-4
-                .row.align-items-center
-                  .col-lg-auto
-                    img(src="@/assets/curso/tema2/16.svg", style="max-width: 90px").mx-auto
-                  .col-lg.text-white
-                    h5 02
-                    p.mb-0 Informes de gestión y regulatorios
-          .col-lg-4.mb-3.mb-lg-0
-            .bg-color-3.mb-5
-              .px-4.p-4
-                .row.align-items-center
-                  .col-lg-auto
-                    img(src="@/assets/curso/tema2/17.svg", style="max-width: 90px").mx-auto
-                  .col-lg.text-white
-                    h5 03
-                    p.mb-0 Cuadros de mando corporativos
-
-        p.mb-5 Conocer y aplicar estos fundamentos psicológicos permite diseñar visualizaciones más comprensibles, centradas en las personas y útiles para la toma de decisiones. Estos principios se traducen en mejores resultados, menos errores y mayor alineación entre equipos.
+                  p.mb-0 Mantiene la interactividad al trabajar en Desktop/Public o publicar en la nube.
+                li.mb-0.d-flex
+                  i.far.fa-arrow-alt-circle-right
+                  p.mb-0 Facilita la comprensión de temas complejos paso a paso, como en el ejemplo de Bank of America.
 
     #t_2_3.titulo-segundo(data-aos="flip-up")
-      h2 #[span 2.3] Tipologías de gráficos y su uso táctico
-
+      h2 #[span 2.3] Infogram
+    
     .row.mb-5
       .col-lg-4.mb-3.mb-lg-0.order-lg-2
         figure
-          img(src="@/assets/curso/tema2/18.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema4/19.png", data-aos="zoom-in")
       .col-lg-8.order-lg-1
-        p(data-aos="fade-left") Una vez comprendidos los principios visuales —claridad, jerarquía, coherencia y minimalismo— junto con los fundamentos psicológicos del diseño —percepción visual, carga cognitiva y tiempo de comprensión—, el enfoque se traslada hacia un componente esencialmente práctico: la elección adecuada del tipo de gráfico según el objetivo del análisis y la intención comunicativa.
+        p(data-aos="fade-left") Infogram es una herramienta online de visualización de datos que permite crear gráficos, mapas e infografías interactivas sin necesidad de conocimientos avanzados de diseño o business intelligence. Es ideal para reportes institucionales, comunicados públicos e informes para audiencias no técnicas, donde la claridad visual y la narrativa son prioritarias.
     
         .bg-color-10.p-5.mb-3(data-aos="fade-left")
-          p.mb-0 No todos los gráficos cumplen la misma función. Seleccionar la visualización correcta no solo mejora la comprensión de los datos, sino que también previene errores interpretativos, facilita la lectura rápida y permite actuar con mayor precisión en diversos contextos organizacionales. En este sentido, la elección del gráfico deja de ser una cuestión estética para convertirse en una decisión estratégica.
-        p Esta competencia es clave para profesionales de inteligencia de negocios, control de gestión, logística, marketing, finanzas y otras áreas en las que el análisis se traduce en decisiones visuales. A continuación, se presentan los principales tipos de gráficos, su propósito táctico y un enlace a una imagen ilustrativa de libre acceso para consulta académica:
+          p.mb-0 Su función principal es convertir datos en historias visuales atractivas. Gracias a su diseño intuitivo y capacidad interactiva, permite comunicar tendencias, comparaciones y resultados clave de forma sencilla y profesional.
+        h5 Ejemplo aplicado:
+        p El Alto Comisionado de las Naciones Unidas para los Refugiados (ACNUR) utiliza Infogram para dashboards humanitarios, mostrando tendencias migratorias mediante mapas, líneas de tiempo e infografías. Esto facilita que públicos generales y tomadores de decisión comprendan los datos sin necesidad de análisis técnico
 
-    .bg-full-width.bg-color-11
-      .px-4.px-md-5.pb-md-3
-        .row.justify-content-center.mb-5.align-items-center
-          .col-lg-8.mb-3.mb-lg-0.order-lg-2
-            SlyderF(columnas="col-12 col-lg-6")
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/20.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Gráfico de barras
-                p.text-center Comparar magnitudes entre categorías, como ventas por producto o región.
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/21.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Gráfico de columnas
-                p.text-center Comparar datos en formato vertical. Útil para dashboards financieros y seguimiento de KPIs.
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/22.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Gráfico de líneas
-                p.text-center Visualizar la evolución temporal de una variable, como ventas mensuales o crecimiento.
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/23.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Gráfico de cajas (boxplot)
-                p.text-center Analizar la dispersión de los datos, detectar valores atípicos y observar la mediana. Común en análisis de procesos y calidad.
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/24.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Gráfico de dispersión
-                p.text-center Explorar correlaciones entre dos variables. Útil en análisis estadísticos y en modelos predictivos..
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/25.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Gráfico de burbujas
-                p.text-center Representar tres dimensiones de datos. Ideal para análisis de posicionamiento de productos o segmentos..
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/26.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Gráfico circular (torta)
-                p.text-center Mostrar proporciones entre categorías. Se recomienda solo cuando hay pocas categorías para evitar confusión.
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/27.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Treemap
-                p.text-center Representar composiciones jerárquicas en espacios compactos. Útil para análisis de portafolios o ventas agrupadas.
-              .bg-color-white.p-4.h-100.shadow-app
-                img(src='@/assets/curso/tema2/28.svg' alt='AvatarTop' , style="max-width: 90px").mx-auto.mb-3
-                h4.text-center.mb-4 Barras apiladas (stacked bars)
-                p.text-center Comparar componentes dentro de categorías. Recomendado para visualizar estructuras de costos, desempeño por área o ventas acumuladas.
+    .titulo-con-imagen.mb-5(data-aos="fade-right")
+      .titulo-con-imagen__fondo
+        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
+        h3.titulo-con-imagen__texto ¿Cómo se usa?
     
-          .col-lg-4.order-lg-1
-            figure
-              img(src='@/assets/curso/tema2/19.png', alt='')
+    .row.mb-5
+      .col-lg-4.mb-3.mb-lg-0
+        figure
+          img(src="@/assets/curso/tema4/20.png", data-aos="zoom-in")
+      .col-lg-8
+        p(data-aos="fade-left") Para trabajar con Infogram basta con seguir un flujo básico:
+        .bg-color-1.p-5(data-aos="fade-left")
+          ul.lista-ul--color
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p 1.	Acceder a la plataforma en  <br>
+            a.anexo.mb-4.mb-lg-0.bg-color-white(href="https://www.infogram.com" target="_blank")
+              .anexo__icono.bg-color-13
+                img(src="@/assets/template/icono-link.svg")
+              .anexo__texto
+                p <b>Ir al sitio</b> www.infogram.com
+          ul.lista-ul--color.mb-0
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 2.	Seleccionar una plantilla (barras, mapas, cronologías, KPI, etc.).
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 3.	Cargar los datos desde Excel, Google Sheets o ingresarlos manualmente.
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 4.	Personalizar el diseño con colores corporativos, logotipos y textos narrativos.
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 5.	Publicar el proyecto de forma pública o embeberlo en un sitio web.
     
-    #t_2_4.titulo-segundo(data-aos="flip-up")
-      h2 #[span 2.4] Casos reales y crítica visual
+    .titulo-con-imagen.mb-5(data-aos="fade-right")
+      .titulo-con-imagen__fondo
+        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
+        h3.titulo-con-imagen__texto Ventajas principales
     
     .row.mb-5
       .col-lg-4.mb-3.mb-lg-0.order-lg-2
         figure
-          img(src="@/assets/curso/tema2/29.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema4/21.png", data-aos="zoom-in")
       .col-lg-8.order-lg-1
-        p(data-aos="fade-left") La selección adecuada de gráficos no solo depende del conocimiento técnico y cognitivo, sino también del contexto real en el que se aplican. Comprender cómo impactan las visualizaciones en diferentes escenarios permite conectar el diseño gráfico informativo con su efecto estratégico en la toma de decisiones.
-    
-        .bg-color-2.p-5.mb-3(data-aos="fade-left")
-          p.mb-0 Después de estudiar los principios del diseño visual, los fundamentos cognitivos y las tipologías de gráficos, este subtema propone analizar casos reales en los que las visualizaciones han sido empleadas con distintos fines: informar, persuadir, manipular o comunicar técnicamente. Cada caso se estructura a partir de una problemática visual concreta, una solución basada en la teoría del diseño y una aplicación adaptada a los objetivos comunicacionales y a la audiencia.
-        p Este ejercicio no solo refuerza la comprensión conceptual, sino que fomenta el pensamiento crítico visual, una competencia fundamental en roles que integran análisis de datos con comunicación de resultados, como ocurre en la gestión corporativa, los medios, la política pública y la investigación internacional.
+        p(data-aos="fade-left") Antes de ver el proceso paso a paso, conviene conocer sus ventajas:
+        .bg-color-4.p-5(data-aos="fade-left")
+          ul.lista-ul--color.mb-0
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Acceso inmediato desde el navegador, sin instalación.
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Interfaz intuitiva con función de arrastrar y soltar.
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Importación directa de datos desde Excel, Google Sheets o CSV.
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Adecuada para comunicar datos a audiencias no técnicas.
+            li.mb-0.d-flex
+              i.far.fa-arrow-alt-circle-right
+              p.mb-0 Permite embeber proyectos en blogs, presentaciones o plataformas educativas.
 
     .titulo-con-imagen.mb-5(data-aos="fade-right")
       .titulo-con-imagen__fondo
         img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-        h3.titulo-con-imagen__texto Caso 1: selección de gráfico en informes ejecutivos
+        h3.titulo-con-imagen__texto Paso a paso para crear un Infogram desde Excel
     
-    p.mb-5 En muchos informes corporativos se utilizan gráficos circulares para representar más de seis categorías, lo cual dificulta la lectura y genera ambigüedad visual. La solución consiste en emplear gráficos de barras horizontales ordenadas, que permiten comparar los valores de manera más clara.
+    p.mb-5 A continuación, se presenta la tabla con el paso a paso para crear un Infogram desde Excel.
 
-    .titulo-figura.mb-4
-      h5 Tabla 1.
-      span Caso 1. Selección adecuada del tipo de gráfico en informes ejecutivos
-    .tabla-a.color-acento-botones.mb-5.tbl
-      table
-        thead
-          tr
-            th.bg-color-3.text-white Elemento
-            th.bg-color-3.text-white Selección
-        tbody
-          tr
-            td Tipo de gráfico recomendado
-            td Barras horizontales ordenadas
-          tr.bg-color-6
-            td Propósito
-            td Comparación entre categorías
-          tr
-            td Justificación
-            td Mejora la legibilidad y el orden de lectura de valores altos a bajos
-          tr.bg-color-6
-            td Objetivo comunicacional
-            td Comparar participaciones porcentuales entre unidades de negocio
-          tr
-            td Audiencia
-            td Directivos de estrategia y gestión financiera
-          tr.bg-color-6
-            td Resultado
-            td Mayor claridad en las reuniones ejecutivas y mejor toma de decisiones presupuestales
-
+    .row.align-items-start.mb-5
+      .col-lg-4.order-lg-2.mb-3.mb-lg-0
+        figure
+          img(src="@/assets/curso/tema4/22.png", alt="").mb-4.mb-lg-0
+      .col-lg-8.order-lg-1
+    
+        AcordionA(tipo="b")
+          .div(titulo="1. Acceder a la plataforma")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p Ingresar a  
+              a.anexo.mb-4.mb-lg-0.bg-color-white(href="https://www.infogram.com" target="_blank")
+                .anexo__icono.bg-color-13
+                  img(src="@/assets/template/icono-link.svg")
+                .anexo__texto
+                  p <b>Ir al sitio</b> www.infogram.com
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Crear una cuenta gratuita con correo institucional, Google o LinkedIn.
+    
+          .div(titulo="2. Crear un nuevo proyecto")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Hacer clic en Create → Infographic o Dashboard. 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Seleccionar una plantilla prediseñada o Blank para iniciar desde cero.
+    
+          .div(titulo="3. Cargar los datos desde Excel")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 - Ir a la barra lateral y seleccionar Add Chart. - Elegir el tipo de gráfico: barras, líneas, pastel, mapas, KPI o tablas. - Hacer clic en el gráfico → Edit data → Import Excel (.xlsx) o pegar los datos manualmente. Ejemplo práctico: Si el Excel contiene: Categoría – Ventas Tecnología – 15000 Muebles – 10000 Suministros – 8000 Puede representarse como: - Gráfico de columnas → Comparativo por categoría. - Indicador (KPI) → Total por categoría. - Gráfico circular → Distribución porcentual.
+    
+          .div(titulo="4. Personalizar el diseño")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Cambiar colores corporativos, tipografías y leyendas.
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Agregar títulos, subtítulos y textos narrativos. - Insertar íconos, imágenes o mapas según la historia visual.
+          .div(titulo="5. Publicar o compartir")
+            ul.lista-ul--color
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Hacer clic en Share y seleccionar: 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Enlace público para compartir.
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Código embed para integrar en un sitio web. 
+              li.mb-0.d-flex
+                i.far.fa-arrow-alt-circle-right
+                p.mb-0 Descarga como PNG (gratis) o PDF/PowerPoint (PRO). 
     
     .titulo-con-imagen.mb-5(data-aos="fade-right")
       .titulo-con-imagen__fondo
         img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-        h3.titulo-con-imagen__texto Caso 2: análisis de visualizaciones en medios de comunicación
+        h3.titulo-con-imagen__texto Comparativa de herramientas de visualización gratuitas
     
-    p.mb-5 Durante coberturas electorales, algunos medios han utilizado gráficos de barras truncadas en el eje Y, lo cual exagera diferencias mínimas entre candidatos. La solución implica restaurar el eje Y completo o, si se recorta, indicar claramente el corte y agregar anotaciones.
+    p.mb-5 Las siguientes plataformas permiten crear visualizaciones online sin instalar software:
 
     .titulo-figura.mb-4
-      h5 Tabla 2.
-      span Caso 2: análisis de visualizaciones en medios de comunicación
-    .tabla-a.color-acento-botones.mb-5.tbl
+      h5 Tabla 5.
+      span Comparativa de herramientas de visualización gratuitas
+    .tabla-a.color-acento-botones.mb-5.tbl 
       table
         thead
           tr
-            th.bg-color-3.text-white Mecanismo
-            th.bg-color-3.text-white Descripción y características
-            th.bg-color-3.text-white Ventajas
-            th.bg-color-3.text-white Limitaciones / Uso recomendado
+            th.bg-color-3.text-white Herramienta
+            th.bg-color-3.text-white Gratuita
+            th.bg-color-3.text-white Requiere instalación
+            th.bg-color-3.text-white Nivel de uso
         tbody
           tr
-            td Collar con placa identificativa
-            td Placa con nombre del animal y datos del tutor, visible en el collar o arnés.
-            td Identificación inmediata y sin equipos especiales.
-            td Puede perderse o retirarse. Se recomienda como complemento, no como único método.
+            td Infogram
+            td Sí
+            td No
+            td Muy fácil
           tr.bg-color-6
-            td Tatuaje de identificación
-            td Código alfanumérico tatuado en zonas del cuerpo (oreja, abdomen).
-            td Bajo costo, útil en campañas de esterilización.
-            td Puede desvanecerse; requiere base de datos activa. Útil como refuerzo del microchip.
+            td Canva + gráficos
+            td Sí
+            td No
+            td Fácil
           tr
-            td Microchip de identificación (RFID)
-            td Dispositivo subcutáneo con código único, escaneable por lector.
-            td Permanente, difícil de falsificar, reconocido internacionalmente.
-            td Requiere lector y base de datos activa. Es el método más confiable y recomendado.
+            td Google Looker Studio
+            td Sí
+            td No
+            td Intermedio
           tr.bg-color-6
-            td Dispositivos GPS / telemetría
-            td Tecnología de rastreo en tiempo real mediante aplicaciones móviles.
-            td Prevención de extravíos, útil en zonas rurales.
-            td No es válido legalmente; depende de batería e internet. Solo complemento.
+            td Datawrapper
+            td Sí
+            td No
+            td Fácil
           tr
-            td Placas digitales con QR
-            td Código QR que enlaza a una ficha digital del animal.
-            td Información extensa y actualizable; fácil acceso con celular.
-            td Requiere conexión y mantenimiento del perfil digital. Recomendado como complemento.
-          tr.bg-color-6
-            td Identificación genética (ADN)
-            td Análisis de muestras biológicas para comparar perfiles genéticos.
-            td Precisión absoluta; útil en disputas legales o casos de maltrato.
-            td Alto costo y complejidad. No viable para identificación masiva o cotidiana.
-          tr
-            td Marcas temporales / etiquetas de campaña
-            td Elementos plásticos o textiles usados en jornadas institucionales.
-            td Útiles en vacunación, esterilización o censos.
-            td Valor solo operativo y transitorio. No constituyen identificación formal.
+            td Piktochart
+            td Sí
+            td No
+            td Fácil
 
 
 
-    .titulo-con-imagen.mb-5(data-aos="fade-right")
-      .titulo-con-imagen__fondo
-        img.titulo-con-imagen__imagen(src="@/assets/componentes/1.svg")
-        h3.titulo-con-imagen__texto Caso 3: crítica a visualizaciones del Banco Mundial y otras organizaciones
-    
-    p.mb-5 En reportes sobre pobreza y salud, algunos dashboards institucionales presentan colores poco contrastantes o saturados, lo cual dificulta su lectura, especialmente para personas con daltonismo o en contextos multilingües. La solución se basa en mejorar la accesibilidad visual y adaptar la segmentación geográfica.
-
-    .titulo-figura.mb-4
-      h5 Tabla 3.
-      span Caso 3: crítica a visualizaciones del Banco Mundial y otras organizaciones
-    .tabla-a.color-acento-botones.mb-5.tbl  
-      table
-        thead
-          tr
-            th.bg-color-3.text-white Mecanismo
-            th.bg-color-3.text-white Descripción y características
-            th.bg-color-3.text-white Ventajas
-            th.bg-color-3.text-white Limitaciones / Uso recomendado
-        tbody
-          tr
-            td Collar con placa identificativa
-            td Placa con nombre del animal y datos del tutor, visible en el collar o arnés.
-            td Identificación inmediata y sin equipos especiales.
-            td Puede perderse o retirarse. Se recomienda como complemento, no como único método.
-          tr.bg-color-6
-            td Tatuaje de identificación
-            td Código alfanumérico tatuado en zonas del cuerpo (oreja, abdomen).
-            td Bajo costo, útil en campañas de esterilización.
-            td Puede desvanecerse; requiere base de datos activa. Útil como refuerzo del microchip.
-          tr
-            td Microchip de identificación (RFID)
-            td Dispositivo subcutáneo con código único, escaneable por lector.
-            td Permanente, difícil de falsificar, reconocido internacionalmente.
-            td Requiere lector y base de datos activa. Es el método más confiable y recomendado.
-          tr.bg-color-6
-            td Dispositivos GPS / telemetría
-            td Tecnología de rastreo en tiempo real mediante aplicaciones móviles.
-            td Prevención de extravíos, útil en zonas rurales.
-            td No es válido legalmente; depende de batería e internet. Solo complemento.
-          tr
-            td Placas digitales con QR
-            td Código QR que enlaza a una ficha digital del animal.
-            td Información extensa y actualizable; fácil acceso con celular.
-            td Requiere conexión y mantenimiento del perfil digital. Recomendado como complemento.
-          tr.bg-color-6
-            td Identificación genética (ADN)
-            td Análisis de muestras biológicas para comparar perfiles genéticos.
-            td Precisión absoluta; útil en disputas legales o maltrato.
-            td Alto costo y complejidad. No es viable para identificación masiva o cotidiana.
-          tr
-            td Marcas temporales / etiquetas de campaña
-            td Elementos plásticos o textiles usados en jornadas institucionales.
-            td Útiles en vacunación, esterilización o censos.
-            td Valor solo operativo y transitorio. No constituyen identificación formal.
-
-
-
-    p.mb-5 Estos casos demuestran que la selección correcta del tipo de gráfico no es un detalle técnico, sino una decisión estratégica que incide directamente en la comprensión, la transparencia y la credibilidad del análisis. Saber cuándo utilizar una línea, una barra, un mapa o un treemap puede marcar la diferencia entre un informe útil y uno que induce al error.
+    p.mb-5 Infogram destaca por su simplicidad y enfoque narrativo, siendo la opción más intuitiva para usuarios sin experiencia en BI.
 
     .bg-full-width.bg-color-3.mb-5
       .px-4.p-md-5
         .row.justify-content-center.align-items-center
           .col-lg-7.order-2.text-white
-            h2.mb-4(data-aos="flip-up") Herramientas de visualización – comparativa técnica y estratégica
-            p.mb-4(data-aos="fade-right") Se invita a leer el documento “Herramientas de visualización”, donde se aborda una comparativa detallada entre diversas herramientas para la visualización de datos, tales como Power BI, Tableau, Google Looker Studio, entre otras.
+            h2.mb-4(data-aos="flip-up") Evaluación del impacto de la información visualizada
+            p.mb-4(data-aos="fade-right") Se invita a leer el documento Evaluación del impacto de la información visualizada, donde se aborda el análisis profundo del valor estratégico de las visualizaciones de datos en entornos de inteligencia de negocios. 
     
-            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_1.pdf')" target="_blank")(data-aos="flip-up")
+            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_2.pdf')" target="_blank")(data-aos="flip-up")
               .anexo__icono(:style="{'background-color': '#FCDFDB'}")
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto
-                p <strong>Anexo. </strong> Herramientas de visualización – comparativa técnica y estratégica.
+                p <strong>Anexo. </strong> Evaluación del impacto de la información visualizada.
     
           .col-lg-5.order-1.mb-3.mb-lg-0
             figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema2/30.png', alt='')
+              img(src='@/assets/curso/tema4/23.png', alt='')
 
-
-
-
-
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
 
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
@@ -485,32 +534,211 @@
 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/153298 " target="_blank" rel="noopener noreferrer") Zangaro, M. (2019). La producción de conocimiento en las ciencias sociales y las humanidades: ( ed.). Ediciones del Aula Taller. 
+              a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/204382" target="_blank" rel="noopener noreferrer") Palomo Zurdo, R. J. (Coord.). (2010). Enciclopedia de Economía y Negocios (2), Análisis de sensibilidad - base de datos empresarial: ( ed.). Wolters Kluwer España - Ciudad Educativa. 
+            
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/58566 " target="_blank" rel="noopener noreferrer") Fernández, E. P. (2017). Big data: eje estratégico en la industria audiovisual: ( ed.). Editorial UOC. 
+              a(href="https://learn.microsoft.com/power-bi" target="_blank" rel="noopener noreferrer") Microsoft. (s. f.). Power BI documentation. Microsoft.  (Nota: se emplea “s. f.” si no se encuentra la fecha de publicación)
 
-
-            p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://help.tableau.com/current/guides/get-started/es-es/get-started-overview.htm " target="_blank" rel="noopener noreferrer") Tableau. (2024). Guía de primeros pasos con Tableau. Tableau Help.  
 
 
             p.d-flex.my-4
               img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.youtube.com/watch?v=WA9pm68o1rQ&ab_channel=knowmadmood " target="_blank" rel="noopener noreferrer") knowmad mood  (2018, 4 de diciembre). Visualización de datos en tiempo real con Power BI | atSistemas. [Video]. Youtube. 
+              a(href="https://www.youtube.com/watch?v=FESG7GTjc-4" target="_blank" rel="noopener noreferrer") HUB UIO. [HUB UIO]. (2021, 26 de octubre). Power BI desde cero - clase 1 | Curso gratuito de Power BI [Video]. YouTube. 
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://www.youtube.com/watch?v=iXFob3A5o4s" target="_blank" rel="noopener noreferrer") Grupo Orvital. [Grupo Orvital]. (2023, 1 de agosto). Curso Power BI desde cero | Clase 1 - Introducción [Video]. YouTube.
+
+
 
 
 
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')
-
+  
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
-  name: 'Tema2',
+  name: 'Tema4',
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Herramientas colaborativas para la construcción de paz',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál de los siguientes elementos no forma parte de una presentación efectiva de hallazgos según el modelo de comunicación visual?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Título narrativo',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Visualización comparativa',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Análisis resumido con recomendaciones',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Descripción extensa del origen de los datos',
+                esCorrecta: true,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué tipo de reporte es el más adecuado para presentar resultados financieros trimestrales a un comité directivo?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Reporte operativo',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Reporte táctico',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Reporte estratégico',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Reporte diario',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              '¿Cuál es la principal función de un KRI (Key Risk Indicator)?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Medir el cumplimiento de controles internos',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Representar el desempeño frente a metas',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Identificar señales tempranas de posibles riesgos',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Validar visualmente los dashboards',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Cuál de las siguientes herramientas permite integrar dashboards interactivos dentro de presentaciones de PowerPoint?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Excel VBA',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Tableau Public',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Power BI + PowerPoint (Microsoft 365)',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Google Forms',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿Qué acción corresponde a una técnica de validación estructural en un dashboard de BI?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Realizar pruebas A/B sobre visualizaciones',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Simular variaciones en los datos de entrada',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Comparar resultados actuales con versiones anteriores del mismo dashboard',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Aplicar encuestas de usabilidad a usuarios clave',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -519,4 +747,7 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>
